@@ -11,14 +11,23 @@
 }
  .stars {
 	 z-index: 0;
+	 opacity: .99;
 	 background: black url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
-	 animation: move-twink-back 200s linear infinite;
+	 animation: move-twink-back 200s linear infinite; 
 }
  .twinkling {
 	 z-index: 1;
 	 background: black repeat top center;
 	 animation: blinker 2s linear infinite;
 	 opacity: 75%;
+}
+
+.box {
+	background: green;
+	width: 600px;
+	height: 800px;
+	z-index: 10;
+	opacity: .99;
 }
 
  @keyframes move-twink-back {
@@ -29,6 +38,7 @@
 		 background-position: -10000px 5000px;
 	}
 }
+
 
 @keyframes blinker {
 	25% {
