@@ -18,7 +18,8 @@
  .twinkling {
 	 z-index: 1;
 	 background: black repeat top center;
-	 animation: blinker 500ms linear infinite;
+	 animation: blinker 2s linear infinite;
+	 opacity: 75%;
 }
 
  @keyframes move-twink-back {
@@ -31,8 +32,15 @@
 }
 
 @keyframes blinker {
+	25% {
+		opacity: 0;
+	}
 	50% {
-	  opacity: 0;
+		opacity: 50%;
+	}
+
+	75% {
+		opacity: 20%;
 	}
   }
  
